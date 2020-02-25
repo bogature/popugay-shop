@@ -26,12 +26,12 @@ from apps.home import views
 urlpatterns = [
     path('admin/', admin.site.urls),
 
-    path('', include('apps.home.urls')),
+    # path('', include('apps.home.urls')),
     path('api/v1/product/', include('apps.product.urls')),
     path('api/v1/order/', include('apps.order.urls')),
     path('api/v1/home/', include('apps.home.urls')),
 
     url(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}),
     url(r'^static/(?P<path>.*)$', serve, {'document_root': settings.STATIC_ROOT}),
-    url(r'^(?P<path>.*)/$', views.home),
+    # url(r'^(?P<path>.*)/$', views.home),
 ]
