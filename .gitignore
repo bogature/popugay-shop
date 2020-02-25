@@ -11,8 +11,6 @@
 storage.db
 *.pem
 *.crt
-media
-static
 debug.log
 virtualka
 venv
